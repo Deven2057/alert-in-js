@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulation</title> 
 </head>
-<body id="body">
-    <!-- <ul id="element" data="hello">
+ <body id="body">
+    <ul id="element" data="hello">
         <li class="listitem">first</li>
         <li class="listitem">second</li>
         <li class="listitem">third</li><td</td>
@@ -18,12 +18,12 @@
         </tr>
         <tr>
             <td>what</td> <td>?</td>
-         </tr> -->
-    <!-- </table> -->
+         </tr> 
+    </table> 
 
     <!-- attributeexercise -->
 
-    <!-- <a name="list">The list:</a>
+     <a name="list">The list:</a>
   <ul>
     <li><a href="http://google.com">http://google.com</a></li>
     <li><a href="/tutorial">/tutorial.html</a></li>
@@ -32,95 +32,95 @@
     <li><a href="http://nodejs.org">http://nodejs.org</a></li>
     <li><a href="http://internal.com/test">http://internal.com/test</a></li>
   </ul> -->
-  <!-- // remove example
+  // remove example
   <ol id="elem">
     <li>Hello</li>
     <li>World</li>
-</ol> -->
+</ol>
 <button id="clickBtn">click Me</button>
 
     <script>
-        // //rode node
-        // console.log(document.documentElement)
-        // console.log(document.head )
-        // console.log(document.body)
-        //childern
-    // console.log(document.body.firstElementChild)
-    // console.log(document.body.lastElementChild)
+        rode node
+        console.log(document.documentElement)
+         console.log(document.head )
+         console.log(document.body)
+        childern
+    console.log(document.body.firstElementChild)
+    console.log(document.body.lastElementChild)
 
-    // //siblling
-    // const ulTag = document.body.children[0]
-    // const li1=ulTag.children[0]
-    // const li2 = ulTag.children[1]
-    // console.log(li1.nextElementSibling.textContent)
+    //siblling
+    const ulTag = document.body.children[0]
+    const li1=ulTag.children[0]
+    const li2 = ulTag.children[1]
+    console.log(li1.nextElementSibling.textContent)
 
     //taable element excess
-        // const tableTag=document.body.children[1]
-        // console.log(tableTag.tBodies[0].rows[0].style="background-color:red")
-        // console.log(tableTag.tBodies[0].rows[1].style="background-color:yellow")
+        const tableTag=document.body.children[1]
+        console.log(tableTag.tBodies[0].rows[0].style="background-color:red")
+        console.log(tableTag.tBodies[0].rows[1].style="background-color:yellow")
 //id search
-    //     //element.style.background="red"
-    //    const ul=document.getElementById("element")
-    // //    ul.style.backgroundColor="red"
-    // list=document.getElementsByClassName("listitem")
-    // console.log(document.getElementsByTagName("table"))
-    // //query selector
-    // const list=document.querySelectorAll('.listitem')
-    // console.log(list)
+        element.style.background="red"
+       const ul=document.getElementById("element")
+      ul.style.backgroundColor="red"
+    list=document.getElementsByClassName("listitem")
+    console.log(document.getElementsByTagName("table"))
+    //query selector
+    const list=document.querySelectorAll('.listitem')
+    console.log(list)
 //attribute
-    //console.log(element.getAttribute('data'))
+    console.log(element.getAttribute('data'))
 
 
 //exercise
-    // let selector = 'a[href*="://"]:not([href^="http://internal.com"])';
-    // let links = document.querySelectorAll(selector);
-    // links.forEach(link => link.style.color = 'red');
+    let selector = 'a[href*="://"]:not([href^="http://internal.com"])';
+    let links = document.querySelectorAll(selector);
+    links.forEach(link => link.style.color = 'red');
 
 
     //creat, remove
 
-    //  const newdiv=document.createElement('h1')
-    //  const text=document.createTextNode('devendrabhattarai')
+     const newdiv=document.createElement('h1')
+     const text=document.createTextNode('devendrabhattarai')
   
-    // newdiv.append(text)
+    newdiv.append(text)
    
-    // body.append(newdiv)
+    body.append(newdiv)
 
    //excercise 1
-//    let head=document.createElement('h1')
-//    head.textContent="Create a list"
-//    body.append(head)
-//    let ul=document.createElement("ul")
-//    document.body.append(ul);
+   let head=document.createElement('h1')
+   head.textContent="Create a list"
+   body.append(head)
+   let ul=document.createElement("ul")
+   document.body.append(ul);
 
-//    while(true){
-//     let data = prompt("enter the text","");
-//     if(!data){
-//         break;
-//     }
-//     let li =document.createElement('li');
-//     li.textContent=data;
-//     ul.append(li);
-//    }
+   while(true){
+    let data = prompt("enter the text","");
+    if(!data){
+        break;
+    }
+    let li =document.createElement('li');
+    li.textContent=data;
+    ul.append(li);
+   }
 //example
-// let no=document.createElement('button')
-// no.textContent="enter to show name";
-// body.append(no)
-// no.addEventListener('click',inputmsg);
-// function inputmsg(){
-//     let name=prompt('enter name')
-//   no.textContent=name;
-// }
+let no=document.createElement('button')
+no.textContent="enter to show name";
+body.append(no)
+no.addEventListener('click',inputmsg);
+function inputmsg(){
+    let name=prompt('enter name')
+  no.textContent=name;
+}
   
 //remove example
 
-// function clear(elem) {
-//             while (elem.childNodes.length > 0) {
-//                 elem.childNodes[0].remove();
-//             }
-//         }
+function clear(elem) {
+            while (elem.childNodes.length > 0) {
+                elem.childNodes[0].remove();
+            }
+        }
 
-//         clear(elem);
+        clear(elem);
 
 
 //event
